@@ -9,3 +9,6 @@ git init(命令把这个目录变成Git可以管理的仓库)
 提交文件到仓库: git commit (-m "提交说明")
 查看仓库当前状态: git status
 查看具体修改信息: git diff
+
+注意：新增文件及修改文件后提交都需要操作两步：1.git add, 2.git commit -m <message>，每次操作后可通过git status查看仓库当前状态
+
