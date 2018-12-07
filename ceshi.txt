@@ -1,1 +1,11 @@
-﻿hello word!
+﻿创建版本
+mkdir ceshi(文件名)
+cd ceshi(进入文件目录)
+pwd (显示当前目录路径)
+
+git init(命令把这个目录变成Git可以管理的仓库)
+
+添加文件: git add ceshi.txt
+提交文件到仓库: git commit (-m "提交说明")
+查看仓库当前状态: git status
+查看具体修改信息: git diff
