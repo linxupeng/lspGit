@@ -16,7 +16,7 @@ git init(命令把这个目录变成Git可以管理的仓库)
 版本回退: git reset --hard HEAD(HEAD表示当前版本，如上个版本则为HEAD^,上上版本HEAD^^,上50个版本HEAD~50)
 
 撤销修改: git checkout -- ceshi.txt(如修改后未git add则变回跟之前版本库一样的的状态, 如已git add后又进行修改，则变回跟之前暂存区一样的状态)
-
+撤销修改二: git reset HEAD ceshi.txt(如修改后git add但未commit，可使用此命令，将暂存区的修改退回工作区，再执行git checkout -- ceshi.txt丢弃工作区的修改)
 
 注意：新增文件及修改文件后提交都需要操作两步：1.git add, 2.git commit -m <message>，每次操作后可通过git status查看仓库当前状态
 
