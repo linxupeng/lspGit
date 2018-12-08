@@ -25,3 +25,10 @@ git init(命令把这个目录变成Git可以管理的仓库)
 
 注意：新增文件及修改文件后提交都需要操作两步：1.git add, 2.git commit -m <message>，每次操作后可通过git status查看仓库当前状态
 
+
+远程仓库
+创建SSH Key: ssh-keygen -t rsa -C "253633429@qq.com"
+cd .ssh-->ls --> cat ~/.ssh/id_rsa.pub(可查看到公钥，复制后登录GitHub填入即可)
+
+创建新库: git remote add origin git@github.com:michaelliao/learngit.git(创建新库后生成的地址)
+本地库内容推送到远程库上: git push -u origin master（因为远程库是空的，第一次推送使用-u，此后可简化不加）
